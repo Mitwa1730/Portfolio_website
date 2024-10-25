@@ -1,28 +1,31 @@
+
+/* Author: Mitwa Patel
+Student ID: 000905034  */
+
 body {
-    background-color: #f8f9fa; /* Light background for the page */
+    background-color: #f8f9fa; 
 }
 
 header {
-    background-color: #343a40; /* Dark background for header */
+    background-color: #343a40; 
 }
 
 h1, h2 {
-    color: #007bff; /* Primary color for headings */
+    color: #007bff; 
 }
 
-
 .card {
-    transition: transform 0.2s; /* Smooth transition for card hover */
+    transition: transform 0.2s; 
 }
 
 .card:hover {
-    transform: scale(1.05); /* Scale effect on hover */
+    transform: scale(1.05); 
 }
 
 footer {
-    background-color: #343a40; /* Dark background for footer */
+    background-color: #343a40; 
 }
 
 .text-primary {
-    color: #007bff; /* Bootstrap primary color for headings */
+    color: #007bff; 
 }

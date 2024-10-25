@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS and javaScript bundle -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- Custom CSS link -->
     <link rel="stylesheet" href="styles.css">
     <title>Mitwa Patel - Portfolio</title>
+    
     <!-- Author: Mitwa Patel
-    Student ID: 000905034 -->
+         Student ID: 000905034 -->
 </head>
 <body>
-    <!-- <header class="bg-dark text-white text-center py-5">
-        <img id="profilePic" src="Images/image1.jpeg" alt="Mitwa Patel" class="rounded-circle mb-3" style="width: 165px; height: 145px;">
-        <h1 style="color: #f3ed30;">Mitwa Patel</h1>
-        <p> <img src="Images/mapMarker3.png" alt="Mitwa Patel" style="color: #f3ed30;"> Hamilton, ON</p>
-        <p style="color: #919191;"><i> Disclaimer: This website was created temporarily for an assignment. </i></p>
-    </header> -->
-
-    <header class="bg-dark text-white text-center py-4"> <!-- Reduced top/bottom padding -->
-        <img id="profilePic" src="Images/image1.jpeg" alt="Mitwa Patel" class="rounded-circle mb-2" style="width: 165px; height: 145px;"> <!-- Reduced margin-bottom -->
-        <h1 style="color: #f3ed30; margin-bottom: 3px;">Mitwa Patel</h1> <!-- Reduced margin-bottom -->
+    <!-- Header Section -->
+    <header class="bg-dark text-white text-center py-4"> 
+        <img id="profilePic" src="Images/image1.jpeg" alt="Mitwa Patel" class="rounded-circle mb-2" style="width: 165px; height: 145px; margin-top: 15px;"> 
+        <h1 style="color: #f3ed30; margin-bottom: 3px;">Mitwa Patel</h1> 
         <p style="margin-top: 1px; margin-bottom: 15px;"> 
-            <img src="Images/mapMarker3.png" alt="Mitwa Patel" style="color: #f3ed30;"> Hamilton, ON
+            <img src="Images/mapMarker3.png" alt="Mitwa Patel" style="color: #f3ed30;">&nbsp;&nbsp;Hamilton, ON
         </p>
-        <p style="color: #919191; margin-top: 4px;"><i> Disclaimer: This website was created temporarily for an assignment. </i></p> <!-- No margin-bottom -->
+        <p style="color: #919191; margin-top: 4px;"><i> Disclaimer: This portfolio-website was created temporarily for an assignment. </i></p>
     </header>
     
 
+    <!-- Main content container -->
     <main class="container my-5">
         <section id="summary" class="bg-light p-4 rounded shadow my-4">
             <h2 class="text-primary">Summarizing Statement</h2>
@@ -39,6 +39,8 @@
             </p>
         </section>
         
+
+        <!-- Education section -->
         <section id="education" class="bg-light p-4 rounded shadow my-4">
             <h2 class="text-primary">Education</h2>
             <p><strong>Computer Systems Technician – Software Support </strong><br>         
@@ -51,6 +53,8 @@
                 </p>
         </section>
         
+
+        <!-- Skills section -->
         <section id="skills" class="bg-light p-4 rounded shadow my-4">
             <h2 class="text-primary">Skills</h2>
             <ul class="list-group">
@@ -64,13 +68,17 @@
                 <li class="list-group-item"><strong>Software Development Tools & Practices:</strong> Experience with virtual machines (VMs), version control systems (Git), and bash shell commands.</li>
                 <li class="list-group-item"><strong>Project Management Tools:</strong> Monday.com, Jira</li>
                 <li class="list-group-item"><strong>Operating Systems:</strong> Windows, Unix (including GitBash), Linux</li>
+                <li class="list-group-item"><strong>Soft Skills:</strong> Collaboration, Analytical Thinking, Communication, Problem-Solving, Teamwork, adaptability</li>
             </ul>
         </section>
 
+
+         <!-- Projects section that includes Bootstrap cards -->
         <section id="projects" class="my-5">
             <h2 class="text-primary">Projects</h2>
             <div class="row">
-                <!-- First Card -->
+                
+                <!-- Project 1 card that includes carousel for images -->
                 <div class="col-md-4">
                     <div class="card mb-4">
                         <div class="card-header">
@@ -104,7 +112,7 @@
                     </div>
                 </div>
 
-                <!-- Second Card -->
+                <!-- Project 2 card that includes carousel for images -->
                 <div class="col-md-4">
                     <div class="card mb-4">
                         <div class="card-header">
@@ -138,7 +146,7 @@
                     </div>
                 </div>
 
-                <!-- Third Card -->
+                <!-- Project 3 card that includes carousel for images -->
                 <div class="col-md-4">
                     <div class="card mb-4">
                         <div class="card-header">
@@ -174,11 +182,15 @@
             </div>
         </section>
 
+
+        <!-- Resume section -->
         <section id="resume" class="bg-light p-4 rounded shadow my-4">
             <h2 class="text-primary">Resume</h2>
             <p><a href="resume/portfolio_resume.pdf" target="_blank" class="btn btn-primary">Download my Resume</a></p>
         </section>
         
+
+        <!-- Contact information section -->
         <section id="contact" class="bg-light p-4 rounded shadow my-4">
             <h2 class="text-primary">Contact Information</h2>
             <ul class="list-unstyled">
@@ -189,6 +201,8 @@
         </section>
     </main>
 
+
+    <!-- Footer section -->
     <footer class="bg-dark text-white text-center py-4">
         <p>&copy; 2024 Mitwa Patel</p>
     </footer>
