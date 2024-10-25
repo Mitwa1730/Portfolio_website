@@ -1,0 +1,25 @@
+
+/* Author: Mitwa Patel, 000905034 */
+/* StAuth10244: I Mitwa Patel, 000905034 certify that this material is my original work. No other person's work has been used without due acknowledgement. 
+              I have not made my work available to anyone else.  */
+
+#map {
+    height: 550px; 
+    width: 100%;  
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .custom-input {
+    height: 35.5px; 
+    padding-bottom: 7px;  
+  }
+

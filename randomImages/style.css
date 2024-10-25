@@ -1,0 +1,88 @@
+/* Author: Mitwa Patel, 000905034
+Date: 4th November, 2023.  
+This file includes all css properties for styling specific web elemets for the page. */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#webHeader{
+    color: rgb(167, 253, 37);
+    display: flex;
+    background-color:rgb(78, 77, 77);
+    justify-content: center;
+    padding: 3.5%;
+}
+
+.container-fluid{
+    background-color: rgb(6, 6, 6);
+    align-items: center;  
+}
+
+.animationImg{
+    margin: 21%;
+    animation: img 4s;
+    animation-direction:alternate-reverse;
+}
+
+@keyframes img{
+    50%{
+        transform:rotate(0.97turn);
+    }   
+}
+
+.randomizeButton{
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+}
+
+#randomButton{
+    display: flex;
+    color: white;
+    background-color: #5e6ce7;
+    border: 2px solid rgb(61, 61, 61);
+    width: 40%;
+    font-size: 130%;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 15%;
+    font-weight: bold;
+}
+
+.refreshClock {
+    font-style: italic;
+    margin-top: 5%;
+    width: 100%;
+    padding: 0.6%;
+    font-size: 124%;
+    font-weight: bold;
+}
+
+.imgTimer{
+    font-weight: bold; 
+    font-style: italic;
+    margin-top: 5%;
+    font-size: 126%;
+    text-align: center;
+    float: right;
+}
+
+.updateCounter{ 
+    margin-top: 2%;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+    font-size: 120%;
+}
+
+
+footer{
+    display: flex;
+    padding: 30px;
+    margin-top: 6%;
+    justify-content: center;
+    background-color: rgb(116, 116, 116);  
+}

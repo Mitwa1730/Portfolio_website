@@ -3,58 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
-    <title>Portfolio Website</title>
+    <title>Mitwa Patel - Portfolio</title>
+    <!-- Author: Mitwa Patel
+    Student ID: 000905034 -->
 </head>
 <body>
-    <header>
-        <h1>Portfolio Website</h1>
-        <h1>Your Name</h1>
-        <p>This website was created temporarily for an assignment. You can find my actual portfolio website <a href="link_to_your_actual_portfolio" target="_blank">here</a>.</p>
+    <header class="bg-dark text-white text-center py-5">
+        <img id="profilePic" src="Images/image1.jpeg" alt="Mitwa Patel" class="rounded-circle mb-3" style="width: 165px; height: 145px;">
+        <h1 style="color: #f3ed30;">Mitwa Patel</h1>
+        <p> <img src="Images/mapMarker3.png" alt="Mitwa Patel" style="color: #f3ed30;">  Hamilton, ON</p>
+        <p style="color: #919191;"><i> Disclaimer: This website was created temporarily for an assignment. </i></p>
     </header>
-    
-    <section id="summary">
-        <h2>Summarizing Statement</h2>
-        <p>A brief overview of your background, interests, and goals as a software developer.</p>
-    </section>
-    
-    <section id="education">
-        <h2>Education</h2>
-        <p>Computer Systems Technician – Software Support at Mohawk College, Expected Graduation: December 2025</p>
-    </section>
-    
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming Languages: Java, JavaScript, Python</li>
-            <li>Frameworks: React, Vue.js</li>
-            <li>Tools: Git, GitHub, Visual Studio Code</li>
-            <li>Cloud Platforms: Azure</li>
-        </ul>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>Project 1: <strong>Map-Focused React App</strong> - A web application that utilizes the Google Maps API to display popular locations around Hamilton.</li>
-            <li>Project 2: <strong>Portfolio Website</strong> - A simple portfolio to showcase my projects and skills.</li>
-            <li>Project 3: <strong>Java Sorting Algorithms</strong> - An assignment implementing various sorting algorithms and analyzing their efficiency.</li>
-        </ul>
-    </section>
-    
-    <section id="resume">
-        <h2>Resume</h2>
-        <p><a href="link_to_your_resume.pdf" target="_blank">Download my Resume</a></p>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact Information</h2>
-        <p>Email: your.email@example.com</p>
-        <p>LinkedIn: <a href="your_linkedin_profile" target="_blank">Your LinkedIn</a></p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2024 Your Name</p>
+
+    <main class="container my-5">
+        <section id="summary" class="bg-light p-4 rounded shadow my-4">
+            <h2 class="text-primary">Summarizing Statement</h2>
+            <p>
+                I am a dedicated software developer, specializing in Computer Systems Technician - Software Support at Mohawk College, 
+                passionate about leveraging technology to improve processes, I'm skilled in full-stack development, agile methodologies, 
+                and delivering efficient, scalable software solutions. I am enthusiastic about learning and discovering new technologies. 
+                My aim is to participate in significant projects in the tech industry and to consistently advance my technical abilities.
+            </p>
+        </section>
+        
+        <section id="education" class="bg-light p-4 rounded shadow my-4">
+            <h2 class="text-primary">Education</h2>
+            <p><strong>Computer Systems Technician – Software Support </strong><br>         
+                Mohawk College – Hamilton, ON <br> 
+                <i>Jan 2023 - present </i><br> <br>
+                
+            <strong>Bachelor of Science in Biotechnology </strong><br>	   
+                Parul University – Vadodara, India	<br>
+                <i>May 2016 - April 2019</i> 
+                </p>
+        </section>
+        
+        <section id="skills" class="bg-light p-4 rounded shadow my-4">
+            <h2 class="text-primary">Skills</h2>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Programming Languages:</strong> Python, Java, C# (.NET), PHP</li>
+                <li class="list-group-item"><strong>Web Technologies:</strong> HTML, CSS, Bootstrap, JavaScript, jQuery, Node.js, Express.js, React</li>
+                <li class="list-group-item"><strong>Database Management:</strong> PostgreSQL, MySQL</li>
+                <li class="list-group-item"><strong>Data Structures and Algorithms:</strong> Proficient in fundamental data structures and algorithms for efficient problem-solving.</li>
+                <li class="list-group-item"><strong>Cloud Computing:</strong> Familiar with Azure cloud services and deployment strategies.</li>
+                <li class="list-group-item"><strong>Web Design Software:</strong> Wix, Figma</li>
+                <li class="list-group-item"><strong>Data Visualization Tools: </strong>Power BI</li>
+                <li class="list-group-item"><strong>Software Development Tools & Practices:</strong> Experience with virtual machines (VMs), version control systems (Git), and bash shell commands.</li>
+                <li class="list-group-item"><strong>Project Management Tools:</strong> Monday.com, Jira</li>
+                <li class="list-group-item"><strong>Operating Systems:</strong> Windows, Unix (including GitBash), Linux</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="my-5">
+            <h2 class="text-primary">Projects</h2>
+            <div class="row">
+                <!-- First Card -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h5>Project 1: Map Application</h5>
+                        </div>
+                        <div class="card-body">
+                            <div id="carouselProject1" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="Images/map1.png" class="d-block w-100" alt="Map App Image 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="Images/map2.png" class="d-block w-100" alt="Map App Image 2">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject1" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: rgb(94, 91, 91); width: 28px; height: 28px; border-radius: 50%;"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselProject1" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: rgb(94, 91, 91); width: 28px; height: 28px; border-radius: 50%;"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <p>A web application that utilizes the Google Maps API to display popular locations around Hamilton. Features include geolocation, 
+                                custom markers, and the ability to get directions from the current location.</p>
+                            <div class="text-center my-3">
+                                <p><a href="MapApplication/index.html" target="_blank">View Project</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Card -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h5>Project 2: Cross the Road Game</h5>
+                        </div>
+                        <div class="card-body">
+                            <div id="carouselProject2" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="Images/crossRoad2.png" class="d-block w-100" alt="cross road image2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="Images/crossRoad3.png" class="d-block w-100" alt="cross road image3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject2" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: rgb(94, 91, 91); width: 28px; height: 28px; border-radius: 50%;"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselProject2" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: rgb(94, 91, 91); width: 28px; height: 28px; border-radius: 50%;"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <p>The "Cross The Road" game, built with HTML, CSS, and JavaScript, and SVG elements, challenges players to guide a character safely across a road, 
+                                avoiding moving cars. Keyboard controls and a level-up feature add difficulty, including day and night themes.</p>
+                            <div class="text-center my-3">
+                                <p><a href="crossTheRoad/index.html" target="_blank">View Project</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Third Card -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h5>Project 3: Events & Functions</h5>
+                        </div>
+                        <div class="card-body">
+                            <div id="carouselProject3" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="Images/random1.png" class="d-block w-100" alt="Sorting Image 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="Images/random2.png" class="d-block w-100" alt="Sorting Image 2">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject3" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: rgb(94, 91, 91); width: 28px; height: 28px; border-radius: 50%;"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselProject3" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: rgb(94, 91, 91); width: 28px; height: 28px; border-radius: 50%;"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <p>A web page built with HTML, CSS, JavaScript, showcasing event-handling for interactive image updates. 
+                                It features a button to randomize images, a counter for image updates, and a countdown timer that refreshes images based on user input.</p>
+                                <div class="text-center my-3">
+                                    <p><a href="randomImages/index.html" target="_blank">View Project</a></p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="bg-light p-4 rounded shadow my-4">
+            <h2 class="text-primary">Resume</h2>
+            <p><a href="resume/portfolio_resume.pdf" target="_blank" class="btn btn-primary">Download my Resume</a></p>
+        </section>
+        
+        <section id="contact" class="bg-light p-4 rounded shadow my-4">
+            <h2 class="text-primary">Contact Information</h2>
+            <ul class="list-unstyled">
+                <li>Email: mitwa.patel@gmail.com</li>
+                <li>Phone: (647) 457-9800</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/mitwa-patel-0859b1239/" target="_blank">LinkedIn Profile</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Mitwa Patel</p>
     </footer>
 </body>
 </html>

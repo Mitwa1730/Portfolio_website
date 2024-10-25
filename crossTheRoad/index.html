@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Author: Mitwa Patel, 000905034  
+          Date: 19th November 2023 
+          This HTML file represents a game called "Walk Across The Road". 
+          It allows players to walk across the road, while preventing crashing into an obstacle car.
+          Collision with the car will end the game, and requires to restart it.  -->
+    
+    <title>Crossing the Road</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="mitwa.css">
+    <script src="mitwa.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+       
+        <header>
+            <div class="gameTitle">
+                <p>Walk - Across - The - Road</p>   
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <svg height="102" width="690">
+                        <rect id="blueSky" fill="lightblue" height="102" width="690"/>
+                        <circle  fill="yellow" cx="102" cy="52" r="22" class="sunCircle"></circle>
+                    </svg>
+
+                    <svg height="448" width="690" class="gameRoad">
+                        <rect height="48" width="690" y="0" x="0" fill="green"/>
+                        <rect height="348" width="690" y="48" x="0" fill="grey"/>
+                        <rect height="48" width="690" y="348" x="0" fill="green"/>
+                       
+                        <line stroke-dasharray="100" stroke="white" x1="2" y1="102" x2="692" y2="102" />
+                        <line stroke-dasharray="100" stroke="white" x1="2" y1="152" x2="692" y2="152" />
+                        <line stroke-dasharray="100" stroke="white" x1="2" y1="202" x2="692" y2="202" />
+                        <line stroke-dasharray="100" stroke="white" x1="2" y1="252" x2="692" y2="252" />
+                        <line stroke-dasharray="100" stroke="white" x1="2" y1="302" x2="692" y2="302" />
+                        <image href="assests/purpleboy.png" class="character" width="55" height="50" x="318" y="0"/>
+                    </svg>
+                </div>
+
+                  <div class="col">
+                    <svg height="28" width="138">
+                        <text class="gameTheme" x="48" y="21"> THEME: </text>
+                    </svg>
+                    <button type="button" class="dayGameTheme" id="dayButton" >Day</button>
+                    <button type="button" class="nightGameTheme" id="nightButton">Night</button>
+                    <svg height="102" width="198">
+                        <text x="48" y="54" class="gameScore" id="totalScore"> LEVEL: 1</text>
+                    </svg>
+
+                    <div>
+                        <svg height="28" width="198">
+                            <text x="48" y="14" class="gameDetails">DIRECTIONS: 
+                            </text>
+                        </svg>
+                        <ul class="directions">
+                            <li>Press any key, including any alphabet key from A to Z, on the keyboard to initiate movement.</li>
+                            <li>Crashing into an obstacle car will end the game, and requires you to restart it.</li>
+                        </ul>
+                        <p class="speedNote"><strong>Note:</strong> Elevating the level will result in car speed increase.</p>
+                    </div>
+
+                <button type="button" class="gameStart">Start</button>
+                  </div>
+                </div>
+              </div>
+        </main>
+
+        <footer>
+            <p>&copy;2023, Mitwa Patel, Mohawk College</p>
+        </footer>
+    
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+
+/* Author: Mitwa Patel, 000905034 
+   Date: 19th November 2023  */
+
+.gameTitle{
+    color: rgb(68, 63, 63); 
+    display: flex;
+    font-size: 178%;
+    font-family:Cambria;
+    font-weight:800;  
+    margin-left: 172px; 
+    margin-top: 20px;
+}
+
+.gameStart{
+    color: rgb(253, 247, 247);
+    border: 2px solid black;
+    margin-bottom: 10px;
+    height: 8.5%;
+    width: 34%;
+    background-color: rgb(68, 63, 63);
+    border-radius: 28px;
+    font-size: 26px;
+    margin-left: 155px;
+    font-family:Cambria;   
+}
+
+.gameStart:hover{
+    color: rgb(242, 238, 238);
+    font-weight: 800;
+    background-color: rgb(213, 216, 213);
+    color: rgb(0, 0, 0); 
+}
+
+.gameTheme, .gameScore, .gameDetails{
+    font-size: 20px;
+    fill: rgb(68, 63, 63);
+    font-family:Cambria,'Times New Roman';
+    font-weight: bold;
+}
+
+.dayGameTheme{
+    margin: 2.5%;
+}
+
+.dayGameTheme:hover{
+    color: rgb(241, 240, 240);
+    background-color: rgb(136, 208, 252);
+}
+
+.nightGameTheme:hover{
+    background-color: rgb(14, 14, 62);
+    color: rgb(247, 240, 240); 
+}
+
+.directions{
+    padding-left: 88px;
+}
+
+.over{
+    font-weight: 900;
+    font-size: 230%;
+    font-family:Cambria,'Times New Roman';
+}
+
+.speedNote{
+    margin-left: 88px;
+    margin-top: 38px;
+    margin-bottom: 30px;
+}
+
+footer{
+    display: flex;
+    color: rgb(88, 88, 88);  
+    font-family:Cambria, 'Times New Roman';
+    justify-content: center;
+    font-weight: 550;
+}
+
